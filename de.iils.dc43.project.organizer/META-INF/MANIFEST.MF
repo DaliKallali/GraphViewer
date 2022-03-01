@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Stuff
+Bundle-SymbolicName: de.iils.dc43.project.organizer
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: de.iils.dc43.project.organizer.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: de.test.stuff
+Bundle-ActivationPolicy: lazy
+Export-Package: de.iils.dc43.project.organizer
