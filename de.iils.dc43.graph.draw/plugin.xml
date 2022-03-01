@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="de.iils.dc43.core.interfaces.dc43Interface">
+      <interface
+            category="Export"
+            icon="icons/Sample.png"
+            id="de.iils.dc43.graph.draw.interface"
+            label="Graph View 2D"
+            provider="IILS mbH">
+         <execution
+               class="de.iils.dc43.graph.draw.DC43Execution">
+         </execution>
+      </interface>
+   </extension>
+
+   <extension
+         id="de.iils.dc43.graph.plugin.jgrapht.fragment"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            apply="always"
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+   <extension
+         point="org.eclipse.elk.core.service.layoutConnectors">
+      <setup
+            class="org.eclipse.elk.conn.gmf.GmfLayoutSetup">
+      </setup>
+   </extension>
+
+</plugin>
