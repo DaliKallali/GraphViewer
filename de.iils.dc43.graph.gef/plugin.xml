@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="de.iils.dc43.graph.gef.editor.GraphGraphicalEditor"
+            default="true"
+            extensions="graph"
+            id="de.iils.dc43.graph.gef.editor1"
+            name="Graph GEF Editor">
+      </editor>
+   </extension>
+
+</plugin>
